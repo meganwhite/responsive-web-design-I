@@ -69,12 +69,15 @@ h1, h2, h3, h4, h5 {
 header {
 	margin-top: 20px;
 	display: flex;
-	width: 1000px;
+    width: 1000px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     header {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
     }
 }
 
@@ -82,11 +85,21 @@ header nav{
     font-size: 80%;
     margin-left: 40px;
     display: flex;
-    flex: wrap;
     justify-content: space-between;
     width: 100%;
     word-spacing: 80px;
     align-items: flex-end;
+}
+
+@media (max-width: 800px) {
+    header nav {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0px;
+        width: 100%;
+        align-items: center;
+    }
 }
 
 @media (max-width: 500px) {
@@ -95,12 +108,19 @@ header nav{
         flex-direction: column-reverse;
         align-items: center;
         width: 100%;
+        margin-left: 0px;
     }
 }
 
 header a{
 	text-decoration: none;
 	color:gray;
+}
+
+@media (max-width: 800px) {
+    header a{
+        justify-content: center;
+    }
 }
 
 @media (max-width: 500px) {
@@ -133,37 +153,67 @@ header a{
     }
 }
 
+@media (max-width: 800px) {
+    .text-nav{
+        padding: 40px 0 0 0;
+    }
+}
+
 @media (max-width: 500px) {
     .text-nav {
         width: 100%;
+        padding: 0px;
     }
 }
 
 .main-heading {
 	border-bottom: 1px solid black;
 	padding-bottom: 30px;
-	width: 866px;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: 20px;
 }
 
+@media (max-width: 800px) {
+    .main-heading {
+        display: flex;
+        align-items: center;
+        width; 100%;
+        margin-left: 0px;
+    }
+}
+
+
 @media (max-width: 500px) {
     .main-heading {
         padding-bottom: 100px;
         margin: 0px;
-        width: 95%;
+        width: 90%;
         margin-left: 20px;
         margin-right: 20px;
     }
 }
 
-.main-heading h1{
+
+.heading-text h1{
 	text-align: center;
 	font-size: 500%;
 	margin-left: 30px;
 	width: 450px;
-	margin-top: 120px;
+    margin-top: 120px;
+}
+
+@media (max-width: 800px) {
+    .heading-text h1 {
+        width: 100%;
+        align-content: center;
+        margin-top: 80px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        
+    }
 }
 
 @media (max-width: 500px) {
@@ -173,11 +223,30 @@ header a{
     }
 }
 
+@media (max-width: 800px) {
+    .heading-text {
+        justify-content: center;
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 800px) {
+    .heading-text h1{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
 .main-heading img {
 	margin-top: 80px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .main-heading img {
         display: none;
     }
@@ -195,23 +264,37 @@ header a{
 	text-align: center;
 }
 
+@media (max-width: 800px) {
+    .main-heading button {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
+
 @media (max-width: 500px) {
     .main-heading button {
         margin-top: 20px;
+        margin-left: 0px;
     }
 }
 
 .top-row {
 	margin: 20px;
 	margin-top: 40px;
-	width: 866px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+    .top-row {
+        width: 100%;
+    }
+}
+
 @media (max-width: 500px) {
     .top-row {
-        width: 95%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         margin: 20px 20px 0px 20px;
@@ -242,16 +325,22 @@ header a{
 
 .bottom-row {
 	margin: 20px;
-	width: 866px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid black;
-	padding-bottom: 30px;
 }
 
+@media (max-width: 800px) {
+    .bottom-row {
+        width: 100%;
+        margin-top: 0px;
+        padding-bottom: 20px;
+    }
+}
 @media (max-width: 500px) {
     .bottom-row {
-        width: 95%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         margin: 0 20px 0 20px;
@@ -262,10 +351,11 @@ header a{
 	width: 30%;
 }
 
+
 @media (max-width: 500px) {}
     .services {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
 .product {
@@ -294,9 +384,18 @@ header a{
 	margin: 10px;
 }
 
+@media (max-width: 800px) {
+    .middle-img {
+        width: 100%;
+        margin: 10px 20px 0 20px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+}
+
 @media (max-width: 500px) {
     .middle-img {
-        width: 95%;
+        width: 90%;
         margin: 40px 20px 0 20px;
     }
 }
