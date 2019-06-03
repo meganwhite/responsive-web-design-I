@@ -279,7 +279,7 @@ header a{
 .top-row {
 	margin: 20px;
 	margin-top: 40px;
-	width: 100%;
+	width: 860px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -322,11 +322,12 @@ header a{
 }
 
 .bottom-row {
-	margin: 20px;
-	width: 100%;
+	margin: 0 20px 0 20px;
+	width: 860px;
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 800px) {
@@ -378,8 +379,7 @@ header a{
 
 .middle-img {
 	padding-top: 20px;
-	padding-bottom: 20px;
-	margin: 10px;
+	margin: 0 20px 0 20px;
 }
 
 @media (max-width: 800px) {
